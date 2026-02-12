@@ -36,6 +36,14 @@ nvm use
 
 ## First run
 
+Create local env file:
+
+```bash
+cp .env.example .env
+```
+
+Google OAuth local setup details live in `local-docs/plan/sams-flags-google-oauth-local-setup.md`.
+
 ```bash
 pnpm install
 pnpm fmt:check

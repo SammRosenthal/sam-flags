@@ -3,8 +3,11 @@ import { RouterProvider } from "@tanstack/react-router";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+import { getWebEnv } from "./env";
 import { createAppRouter } from "./router";
 import "./styles/index.css";
+
+getWebEnv();
 
 const queryClient = new QueryClient();
 const router = createAppRouter();
