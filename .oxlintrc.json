@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["**/node_modules/**", "**/.turbo/**", "**/dist/**", "**/coverage/**"],
+  "plugins": ["eslint", "typescript", "react", "vitest", "import", "node", "oxc"],
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "19.0"
+    }
+  },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import/no-unassigned-import": "off"
+  },
+  "overrides": [
+    {
+      "files": ["apps/web/**/*.{ts,tsx}"],
+      "env": {
+        "browser": true
+      }
+    },
+    {
+      "files": ["**/*.{test,spec}.{ts,tsx}"],
+      "env": {
+        "vitest": true,
+        "node": true
+      }
+    }
+  ]
+}

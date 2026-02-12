@@ -1,0 +1,15 @@
+:root {
+  --sf-font-sans: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --sf-font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --sf-color-canvas: #f6f8fc;
+  --sf-color-surface: #ffffff;
+  --sf-color-border: #dde4f0;
+  --sf-color-text-primary: #0b1220;
+  --sf-color-text-muted: #3d4f72;
+  --sf-color-accent: #1f61d0;
+  --sf-color-accent-contrast: #d7e6ff;
+
+  --sf-radius-card: 0.75rem;
+  --sf-shadow-card: 0 16px 40px -24px rgba(17, 28, 52, 0.45);
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@sams-flags/config-typescript/node",
+  "compilerOptions": {
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@sams-flags/react",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "lint": "oxlint src",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@sams-flags/core": "workspace:*",
+    "@sams-flags/shared": "workspace:*",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@sams-flags/config-typescript": "workspace:*"
+  }
+}
